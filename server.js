@@ -20,11 +20,12 @@ var articleone = {
              This is the contect for my first article This is the contect for my first article This is the contect for my first article This is the contect for my first article This is the contect for my first article This is the contect for my first article 
          </p>`
 };
-function createmplate (data){ 
+function createmplate (data) { 
     var title = data.title;
     var date = data.date;
     var heading = data.heading;
     var content = data.content;
+    
 var htmltemplate = `
 <html>
  <head>
@@ -52,13 +53,8 @@ var htmltemplate = `
  </body>
 </html>
 `;
-
 return htmltemplate;
 }
-
-
-
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
