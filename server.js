@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles ={
- articleOne:{
+ 'article-one':{
     title: "Article one| nidhi sharma ",
     heading: "Article one",
     date: "sep 5, 2016",
@@ -21,7 +21,7 @@ var articles ={
              This is the contect for my first article This is the contect for my first article This is the contect for my first article This is the contect for my first article This is the contect for my first article This is the contect for my first article 
          </p>`
 },
- articleTwo: {
+ 'article-two': {
     title: "Article Two| nidhi sharma ",
     heading: "Article Two",
     date: "sep 10, 2016",
@@ -31,7 +31,7 @@ var articles ={
          </p>
         `
  },
- articleThree: {
+ 'article-three': {
   title: "Article Three| nidhi sharma ",
     heading: "Article Three",
     date: "sep 10, 2016",
@@ -83,13 +83,20 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:articleName',function(req,res){
-    
-  // res.send(createTemplate(articleOne));
- //  res.send('Article one requested and will be served here.');
-// res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+    //articleName== article-one
+    //articles[articleName]=={} content object for article one
+ 
+ 
+    articleName= req.params.articleName;
+    res.send(createTemplate(articles[articleName]));
+
+
+      // res.send(createTemplate(articleOne));
+     //  res.send('Article one requested and will be served here.');
+    // res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
-app.get('/article-two',function(req,res){
+/*app.get('/article-two',function(req,res){
     //res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
      res.send('Article two requested and will be served here.');
 });
@@ -97,7 +104,7 @@ app.get('/article-two',function(req,res){
 app.get('/article-three',function(req,res){
    // res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
     res.send('Article three requested and will be served here.');
-});
+});  */
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
