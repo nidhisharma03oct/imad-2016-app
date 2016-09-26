@@ -4,13 +4,13 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-/*
-var articleone = {
-    title: "aarticle one| nidhi sharma ",
-    heading: "article one",
+
+var articleOne = {
+    title: "Article one| nidhi sharma ",
+    heading: "Article one",
     date: "sep 5, 2016",
     content:
-    `<p>
+  `<p>
              This is the contect for my first article This is the contect for my first article This is the contect for my first article This is the contect for my first article This is the contect for my first article This is the contect for my first article 
          </p>
          <p>
@@ -20,13 +20,15 @@ var articleone = {
              This is the contect for my first article This is the contect for my first article This is the contect for my first article This is the contect for my first article This is the contect for my first article This is the contect for my first article 
          </p>`
 };
-function createmplate (data) { 
+
+
+function createTemplate (data) { 
     var title = data.title;
     var date = data.date;
     var heading = data.heading;
     var content = data.content;
     
-var htmltemplate = `
+var htmlTemplate = `
 <html>
  <head>
   <title>
@@ -53,15 +55,15 @@ var htmltemplate = `
  </body>
 </html>
 `;
-return htmltemplate;
-}  */
+return htmlTemplate;
+}  
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article-one',function(req,res){
-  //  res.send(createtemplate(articleone));
+   res.send(createTemplate(articleOne));
 //  res.send('Article one requested and will be served here.');
  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
