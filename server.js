@@ -31,7 +31,7 @@ var articles ={
          </p>
         `
  },
- artcileThree: {
+ articleThree: {
   title: "Article Three| nidhi sharma ",
     heading: "Article Three",
     date: "sep 10, 2016",
@@ -83,9 +83,10 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:articleName',function(req,res){
-   res.send(createTemplate(articleOne));
-//  res.send('Article one requested and will be served here.');
- res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+    
+  // res.send(createTemplate(articleOne));
+ //  res.send('Article one requested and will be served here.');
+// res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
 app.get('/article-two',function(req,res){
