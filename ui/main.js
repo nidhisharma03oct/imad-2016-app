@@ -4,6 +4,6 @@ console.log('Loaded!');
 var img= document.getElementById('girl');
 img.onclick= function(){
  
-  img.style.marginleft='100px';
+  img.style.marginLeft='100px';
 
 };
