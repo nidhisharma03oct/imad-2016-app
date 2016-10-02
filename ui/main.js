@@ -21,13 +21,25 @@ img.onclick= function(){
 var button= document.getElementById('counter');
 var counter=0;
 button.onclick = function(){
-//make a request to counter endpoint
-
+//create a request object
+  var request = new XMLHttpRequest();
 //capture the response and store it in the variable
-
+request.onreadystatechange = function(){
+	if(request.readyState=== XMLHttpRequest.Done){
+		// take some action
+		 if (request.status===200)
+		 {
+			var counter = request.responseText;
+			var span= document.getElementById('count');
+            span.innerHTML= counter.toString();
+		 }
+	}
+	//Not done yet
+	
+};
 //rendering the varaiable in correct span
- counter=counter+1;
- var span= document.getElementById('count');
- span.innerHTML= counter.toString();
- 
+     
+ //make a request to counter endpoint
+  request.open("GET","file:///E:/Practice_Videos/imad/webapp/imad-2016-app/ui/index.html/counter",true);
+  request.send(null);
 };
