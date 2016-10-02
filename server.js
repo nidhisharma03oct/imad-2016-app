@@ -83,6 +83,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+//
+/*
 var names=[];
  // app.get('/submit-name/:name',function(req,res) { // its used for  params
    app.get('/submit-name',function(req,res){  // url://submit-name?name-xxxx  -- query parameter--in second line
@@ -93,6 +95,7 @@ var names=[];
     //using JSON
    res.send(JSON.stringify(names));
  });
+ */
 
 var counter=0;
 app.get('/counter',function(req,res){
@@ -100,6 +103,15 @@ app.get('/counter',function(req,res){
     res.send(counter.toString());
 });
 
+var names = [];
+app.get('/submit-name', function(req, res) { // /submit-name?name=xxxx
+  // Get the name from the request
+  var name = req.query.name;
+  
+  names.push(name);
+  // JSON: Javascript Object Notation
+  res.send(JSON.stringify(names));
+});
  
 app.get('/favicon.ico',function(req,res){
     res.sendfile(path.join(__dirname,'ui','favicon.ico'));
