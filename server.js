@@ -77,12 +77,14 @@ var htmlTemplate = `
 return htmlTemplate;
 }  
 
-app.get('/favicon.ico',function(req,res){
-    res.sendfile(path.join(__dirname,'ui','favicon.ico'));
-});
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+app.get('/favicon.ico',function(req,res){
+    res.sendfile(path.join(__dirname,'ui','favicon.ico'));
 });
 
 var counter=0;
@@ -101,6 +103,7 @@ app.get('/submit-name/:name',function(req,res){  // url://submit-name?name-xxxx 
    res.send(JSON.stringify(names));
     
 });
+
 app.get('/:articleName',function(req,res){
     //articleName== article-one
     //articles[articleName]=={} content object for article one
