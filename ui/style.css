@@ -38,7 +38,7 @@ background-color: #121212;
 opacity: 0.84;
 filter: alpha(opacity=84); /* For IE8 and earlier */
 border-top:3px solid #5BBF50;
-min-height: 350px;
+min-height: 50px;
 padding: 30px 0px;
 color: #bfbfbf;
 }
