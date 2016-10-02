@@ -40,6 +40,6 @@ request.onreadystatechange = function(){
 //rendering the varaiable in correct span
      
  //make a request to counter endpoint
-  request.open("GET","http://nidhisharma03oct.imad.hasura-app.io/counter",true);
+  request.open('GET','http://nidhisharma03oct.imad.hasura-app.io/counter',true);
   request.send(null);
 };
