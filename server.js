@@ -77,8 +77,8 @@ var htmlTemplate = `
 return htmlTemplate;
 }  
 
-app.get('/fevicon.ico',function(req,res){
-    res.sendfile(path.join(__dirname,'ui','fevicon.ico'));
+app.get('/favicon.ico',function(req,res){
+    res.sendfile(path.join(__dirname,'ui','favicon.ico'));
 });
 
 app.get('/', function (req, res) {
