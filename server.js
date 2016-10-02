@@ -100,8 +100,7 @@ app.get('/counter',function(req,res){
    names.push(name);
     //using JSON
    res.send(JSON.stringify(names));
-    
-});
+ });
 
 app.get('/favicon.ico',function(req,res){
     res.sendfile(path.join(__dirname,'ui','favicon.ico'));
