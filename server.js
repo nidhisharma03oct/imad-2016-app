@@ -83,9 +83,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/favicon.ico',function(req,res){
-    res.sendfile(path.join(__dirname,'ui','favicon.ico'));
-});
+
 
 var counter=0;
 app.get('/counter',function(req,res){
@@ -94,7 +92,8 @@ app.get('/counter',function(req,res){
 });
 
  var names=[];
-app.get('/submit-name/:name',function(req,res){  // url://submit-name?name-xxxx  -- query parameter--in second line
+  // app.get('/submit-name/:name',function(req,res)  // its used for  params
+ app.get('/submit-name',function(req,res){  // url://submit-name?name-xxxx  -- query parameter--in second line
   // get the name from the request
   // var name= req.params.name;
    var name= req.query.name;
@@ -102,6 +101,10 @@ app.get('/submit-name/:name',function(req,res){  // url://submit-name?name-xxxx 
     //using JSON
    res.send(JSON.stringify(names));
     
+});
+
+app.get('/favicon.ico',function(req,res){
+    res.sendfile(path.join(__dirname,'ui','favicon.ico'));
 });
 
 app.get('/:articleName',function(req,res){
