@@ -45,7 +45,7 @@ request.onreadystatechange = function(){
 };
 
 
-var nameInput=document.getElementId('name');
+var nameInput=document.getElementById('name');
 var name= nameInput.value;
 var submit= document.getElementById('submit-btn');
  submit.onclick= function(){
