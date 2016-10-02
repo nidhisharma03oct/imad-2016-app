@@ -19,7 +19,7 @@ img.onclick= function(){
 */
 
 var button= document.getElementById('counter');
-var counter=0;
+//var counter=0;
 button.onclick = function(){
 //create a request object
   var request = new XMLHttpRequest();
@@ -40,6 +40,6 @@ request.onreadystatechange = function(){
 //rendering the varaiable in correct span
      
  //make a request to counter endpoint
-  request.open("GET","file:///E:/Practice_Videos/imad/webapp/imad-2016-app/ui/index.html/counter",true);
+  request.open("GET","http://nidhisharma03oct.imad.hasura-app.io//counter",true);
   request.send(null);
 };
