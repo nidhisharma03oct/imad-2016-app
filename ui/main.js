@@ -78,7 +78,7 @@ var submit= document.getElementById('submit-btn');
      var nameInput=document.getElementById('name');
 var name= nameInput.value;
  // make a request to the server and send the name
-  request.open('GET','http://nidhisharma03oct.imad.hasura-app.io/submit-name='+ name,true);
+  request.open('GET','http://nidhisharma03oct.imad.hasura-app.io/submit-name?name='+ name,true);
   request.send(null);
  };
 
