@@ -19,7 +19,7 @@ var submit= document.getElementById('submit-comment');
         for(var i =0;i<comments.length;i++)
         {
 		 var x= i+1;
-            comment_list += '<li>' +'comment' +x+  +':'+ comments[i]+ '</li>';
+            comment_list += '<li>' + 'comment' +x+ ':'+ comments[i]+ '</li>';
          }
      var ul = document.getElementById('commentslist');
      ul.innerHTML= comment_list;
