@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: rgb(185, 206, 255);
+    background-color:rgb(18, 198, 217) ;
     margin-top: 60px;
 }
 
@@ -47,12 +47,12 @@ color: #bfbfbf;
 {
 width: 704px;
 margin: 0 auto;
-background-color: white;
+background-color: rgb(185, 206, 255);
 opacity: 0.84;
 filter: alpha(opacity=84); /* For IE8 and earlier */
 border-top:3px solid #5BBF50;
-min-height: 50px;
-padding-top:10px;
+min-height: 40px;
+padding-top:5px;
 padding-left: 10px;
 padding-right: 10px;
 color: black;
