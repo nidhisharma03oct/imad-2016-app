@@ -71,7 +71,8 @@ var htmlTemplate = `
      <div>
          ${content}
      </div>
-     <div>
+     <hr>
+      <div>
       <textarea id="comments" rows="5" cols="20"> </textarea>
       <hr>
       <input type="submit" id="submit-btn" value="Submit"></input>
