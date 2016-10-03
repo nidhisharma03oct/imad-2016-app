@@ -63,12 +63,11 @@ color: black;
 }
 #content
 {
-    margin: 4px;
+    margin: 10px;
     opacity: 0.9;
     filter: alpha(opacity=50); /* For IE8 and earlier */
     font-style: italic;
     font-size: 14px;
-    font-family: 'Impact,Charcoal',sans-serif;
-    
-     border: 25px solid red;
+    font-family: -webkit-pictograph;
+    border: 2px groove blanchedalmond;
   }
