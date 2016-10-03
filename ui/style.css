@@ -42,3 +42,15 @@ min-height: 50px;
 padding: 10px 0px;
 color: #bfbfbf;
 }
+#wrapper2
+{
+width: 474px;
+margin: 0px auto;
+background-color: powderblue;
+opacity: 0.84;
+filter: alpha(opacity=84); /* For IE8 and earlier */
+border-top:3px solid #5BBF50;
+min-height: 50px;
+padding: 10px 0px;
+color: #bfbfbf;
+}
