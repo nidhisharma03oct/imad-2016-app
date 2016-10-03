@@ -51,7 +51,7 @@ background-color: rgb(146, 215, 255);
 opacity: 0.84;
 filter: alpha(opacity=84); /* For IE8 and earlier */
 border-top:3px solid #5BBF50;
-
+min-height: 40px;
 padding-top:5px;
 padding-left: 10px;
 padding-right: 10px;
