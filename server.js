@@ -111,15 +111,7 @@ var names=[];
    res.send(JSON.stringify(names));
  });
  */
-     
-app.get('/:articleName',function(req,res){
-    //articleName== article-one
-    //articles[articleName]=={} content object for article one
-
-    articleName= req.params.articleName;
-    res.send(createTemplate(articles[articleName]));
-    
-var comments=[];
+     var comments=[];
 app.get('/submit-comment',function(req,res){  // / submit-comment?comment=xxxx
    //get the comments from the request
     var comment= req.query.comment;
@@ -127,6 +119,15 @@ app.get('/submit-comment',function(req,res){  // / submit-comment?comment=xxxx
     //using JSON we convert our array into string so the response can be sent as string or can say bytes
     res.send(JSON.stringify(comments));
 });
+
+app.get('/:articleName',function(req,res){
+    //articleName== article-one
+    //articles[articleName]=={} content object for article one
+
+    articleName= req.params.articleName;
+    res.send(createTemplate(articles[articleName]));
+    
+
     
 
 
