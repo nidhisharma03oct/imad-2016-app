@@ -57,7 +57,7 @@ var htmlTemplate = `
      
  </head>
  <body>
-     <div class="container">
+     <div id="wrapper2" class="container">
          <div>
          <a href="/">home</a>
      </div>
