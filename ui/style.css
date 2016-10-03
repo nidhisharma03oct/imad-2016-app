@@ -61,6 +61,10 @@ color: black;
 {
     width:200px;
 }
+#date
+{
+    border:2px groove blanchedalmond ;
+}
 #content
 {
     margin: 10px;
