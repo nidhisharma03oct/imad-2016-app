@@ -13,14 +13,14 @@ var submit= document.getElementById('submit-comment');
 		// take some action
 		 if (request.status===200)
 		 {
-	   var names=request.responseText;
-	   names= JSON.parse(names);
+	   var comments=request.responseText;
+	   comments= JSON.parse(comments);
         var list='';
-        for(var i =0;i<names.length;i++)
+        for(var i =0;i<comments.length;i++)
         {
-            list += '<li>' + names[i]+ '</li>';
+            list += '<li>' + comments[i]+ '</li>';
          }
-     var ul = document.getElementById('namelist');
+     var ul = document.getElementById('commentslist');
      ul.innerHTML= list;
 		 }
 	}
@@ -28,9 +28,9 @@ var submit= document.getElementById('submit-comment');
 	
 };
 //rendering the varaiable in correct span
-     var nameInput=document.getElementById('comments');
-    var name= nameInput.value;
+     var coommentInput=document.getElementById('txtcomments');
+    var comment2= coommentInput.value;
  // make a request to the server and send the name
-  request.open('GET','http://nidhisharma03oct.imad.hasura-app.io/submit-name?name='+ name,true);
+  request.open('GET','http://nidhisharma03oct.imad.hasura-app.io/submit-comment?comment='+ comment2,true);
   request.send(null);
  };
