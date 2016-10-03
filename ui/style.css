@@ -68,4 +68,5 @@ color: black;
     filter: alpha(opacity=50); /* For IE8 and earlier */
     font-style: italic;
     font-size: 14px;
+    font-family: 'Aguafina Script', cursive;
   }
