@@ -118,6 +118,16 @@ app.get('/:articleName',function(req,res){
     articleName= req.params.articleName;
     res.send(createTemplate(articles[articleName]));
     
+var comments=[];
+app.get('/submit-comment',function(req,res){  // / submit-comment?comment=xxxx
+   //get the comments from the request
+    var comment= req.query.comment;
+    comments.push(comment);
+    //using JSON we convert our array into string so the response can be sent as string or can say bytes
+    res.send(JSON.stringify(comments));
+});
+    
+    
 var counter=0;
 app.get('/counter',function(req,res){
     counter= counter+1;
@@ -132,7 +142,7 @@ var names = [];
 app.get('/submit-name', function(req, res) { // /submit-name?name=xxxx
   // Get the name from the request
   var name = req.query.name;
-  
+  //add into array
   names.push(name);
   // JSON: Java script Object Notation
   res.send(JSON.stringify(names));
