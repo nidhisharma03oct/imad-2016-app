@@ -83,9 +83,10 @@ var htmlTemplate = `
        </ul>
      </div>
 </div>
-      <script type="text/javascript" src="/ui/article.js">
-        </script>
+     
  </body>
+  <script type="text/javascript" src="/ui/article.js">
+        </script>
 </html>
 `;
 return htmlTemplate;
