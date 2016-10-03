@@ -71,7 +71,7 @@ var htmlTemplate = `
          ${content}
      </div>
      <div>
-       <input type= "text" placeholder="name"></input>
+       <input type= "text" placeholder="name" multiline="true"></input>
      </div>
 </div>
  </body>
