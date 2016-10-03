@@ -70,6 +70,9 @@ var htmlTemplate = `
      <div>
          ${content}
      </div>
+     <div>
+       <input type= "text" placeholder="name"></input>
+     </div>
 </div>
  </body>
 </html>
