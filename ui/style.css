@@ -59,7 +59,9 @@ color: black;
 }
 #txtcomments
 {
-    width:200px;
+    max-width: 504px;
+    width: 400px;
+    max-height: 100px;
 }
 #date
 {
@@ -83,4 +85,6 @@ color: black;
     font-size: 14px;
     font-family: -webkit-pictograph;
     border: 2px groove blanchedalmond;
+    padding: inherit;
+    clear: left;
   }
