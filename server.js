@@ -70,7 +70,7 @@ var htmlTemplate = `
      <div>
          ${date}
      </div>
-     <div id="content">
+     <div id="content" class="bold">
          ${content}
      </div>
      <hr>
