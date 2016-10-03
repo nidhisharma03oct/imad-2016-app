@@ -54,7 +54,8 @@ var htmlTemplate = `
      </title>
          <meta name="viewport" content="width-device-width, initial-scale=1">
       <link href="/ui/style.css" rel="stylesheet" />
-     
+        <script type="text/javascript" src="/ui/article.js">
+        </script>
  </head>
  <body>
      <div id="wrapper2" class="container">
@@ -85,8 +86,7 @@ var htmlTemplate = `
 </div>
      
  </body>
-  <script type="text/javascript" src="/ui/article.js">
-        </script>
+
 </html>
 `;
 return htmlTemplate;
