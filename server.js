@@ -75,7 +75,11 @@ var htmlTemplate = `
       <div>
       <textarea id="comments" rows="5" cols="20"> </textarea>
       <hr>
-      <input type="submit" id="submit-btn" value="Submit"></input>
+      <input type="submit" id="submit-comment" value="Submit"></input>
+       <hr>
+       <ul id="namelist">
+               
+       </ul>
      </div>
 </div>
       <script type="text/javascript" src="/ui/main.js">
