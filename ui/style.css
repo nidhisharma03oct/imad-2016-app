@@ -98,4 +98,6 @@ color: black;
     border: 2px groove blanchedalmond;
     padding: inherit;
     clear: left;
+    background-image: url(http://freedesignfile.com/upload/2016/04/Spring-sunlight-with-green-leaves-vector-background-05.jpg),url(http://freedesignfile.com/upload/2015/01/Halation-bubble-with-green-leaves-vector-background-06.jpg);
+    background-position: left top,right bottom;
   }
