@@ -63,7 +63,16 @@ color: black;
 }
 #date
 {
-    border:2px groove blanchedalmond ;
+   
+    border: 1px dashed blanchedalmond;
+    max-width: 100px;
+    float: left;
+    padding-left: 10px;
+    margin-left: 10;
+    font-weight: bold;
+    /* font-variant-caps: inherit; */
+    /* font-kerning: initial; */
+    font-stretch: expanded;
 }
 #content
 {
