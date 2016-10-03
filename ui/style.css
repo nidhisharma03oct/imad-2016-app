@@ -29,7 +29,17 @@ body {
              padding-left: 20px;
              padding-right: 20px;
  }
-     
+   
+   
+   
+p
+{
+     font-style: italic;
+    font-size: 14px;
+    font-family: -webkit-pictograph;
+    font-weight: bold;
+}
+
 #wrapper
 {
 width: 474px;
@@ -56,6 +66,7 @@ padding-top:5px;
 padding-left: 10px;
 padding-right: 10px;
 color: black;
+
 }
 #txtcomments
 {
