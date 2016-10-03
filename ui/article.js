@@ -28,7 +28,6 @@ var submit= document.getElementById('submit-comment');
 	//Not done yet
 	
 };
-//rendering the varaiable in correct span
      var coommentInput=document.getElementById('txtcomments');
     var comment2= coommentInput.value;
 	 console.log('comment is : ',comment2);
