@@ -64,5 +64,8 @@ color: black;
 #content
 {
     margin: 4px;
+    opacity: 0.9;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
     font-style: italic;
+    font-size: 14px;
   }
