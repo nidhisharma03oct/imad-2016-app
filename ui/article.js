@@ -15,13 +15,14 @@ var submit= document.getElementById('submit-comment');
 		 {
 	   var comments=request.responseText;
 	   comments= JSON.parse(comments);
-        var list='';
+        var comment_list='';
         for(var i =0;i<comments.length;i++)
         {
-            list += '<li>' + comments[i]+ '</li>';
+		 var x= i+1;
+            comment_list += '<li>' +'comment' +x+  +':'+ comments[i]+ '</li>';
          }
      var ul = document.getElementById('commentslist');
-     ul.innerHTML= list;
+     ul.innerHTML= comment_list;
 		 }
 	}
 	//Not done yet
@@ -30,6 +31,7 @@ var submit= document.getElementById('submit-comment');
 //rendering the varaiable in correct span
      var coommentInput=document.getElementById('txtcomments');
     var comment2= coommentInput.value;
+	 console.log('comment is : ',comment2);
  // make a request to the server and send the name
   request.open('GET','http://nidhisharma03oct.imad.hasura-app.io/submit-comment?comment='+ comment2,true);
   request.send(null);
