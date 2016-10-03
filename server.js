@@ -17,6 +17,7 @@ var articles ={
          <p>
              This is the contect for my first article This is the contect for my first article This is the contect for my first article This is the contect for my first article This is the contect for my first article This is the contect for my first article 
          </p> `
+         
 },
  'article-two': {
     title: "Article Two| nidhi sharma ",
