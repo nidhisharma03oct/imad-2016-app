@@ -75,7 +75,7 @@ var htmlTemplate = `
      </div>
      <hr>
       <div>
-      <h5>Enter your comments here</h5>
+      <p>Enter your comments here</p>
       <textarea id="txtcomments" rows="5" cols="20"> </textarea>
       <hr>
       <input type="submit" id="submit-comment" value="Submit"></input>
