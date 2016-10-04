@@ -69,7 +69,11 @@ color: black;
 
 }
 
-
+/* unvisited link */
+a:link {
+    color: red;
+    text-decoration: none;
+}
 /* visited link */
 a:visited {
     color: black;
