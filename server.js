@@ -60,8 +60,8 @@ var htmlTemplate = `
  </head>
  <body>
      <div id="wrapper2" class="container">
-         <div>
-         <a href="/">home</a>
+         <div id="home">
+         <a href="/">Home</a>
      </div>
      <hr/>
      <h3 id="heading">
