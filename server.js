@@ -81,7 +81,7 @@ var htmlTemplate = `
       <input type="submit" id="submit-comment" value="Submit"></input>
        <hr>
        <p id="commentslist">
-            
+         
        </p>
      </div>
 </div>
