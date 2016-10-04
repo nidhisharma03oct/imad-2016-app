@@ -9,7 +9,7 @@ var articles ={
  'article-one':{
     title: "Article one| nidhi sharma ",
     heading: "Article One",
-    date: "sep 5, 2016",
+    date: "Sep 5, 2016",
     content:
   `<p>
           There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, 
@@ -64,7 +64,7 @@ var htmlTemplate = `
          <a href="/">home</a>
      </div>
      <hr/>
-     <h3>
+     <h3 id="heading">
          ${heading}
      </h3>
      <div id="date">
@@ -81,7 +81,7 @@ var htmlTemplate = `
       <input type="submit" id="submit-comment" value="Submit"></input>
        <hr>
        <ul id="commentslist">
-               
+            
        </ul>
      </div>
 </div>
