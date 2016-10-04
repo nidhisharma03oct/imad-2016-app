@@ -80,9 +80,9 @@ var htmlTemplate = `
       <hr>
       <input type="submit" id="submit-comment" value="Submit"></input>
        <hr>
-       <ul id="commentslist">
+       <p id="commentslist">
             
-       </ul>
+       </p>
      </div>
 </div>
       <script type="text/javascript" src="/ui/article.js">
