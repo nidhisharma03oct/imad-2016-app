@@ -69,8 +69,8 @@ var submit= document.getElementById('submit-btn');
         {
             list += '<li>' + names[i]+ '</li>';
          }
-     var ul = document.getElementById('namelist');
-     ul.innerHTML= list;
+     var p = document.getElementById('commentslist');
+     p.innerHTML= list;
 		 }
 	}
 	//Not done yet
