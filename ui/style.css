@@ -68,6 +68,15 @@ padding-right: 10px;
 color: black;
 
 }
+
+
+#heading{
+	text-align: center;
+	font-size: 48px;
+	font-weight:bold;
+	font-family: 'Almendra SC', serif;
+}
+
 #txtcomments
 {
     max-width: 504px;
