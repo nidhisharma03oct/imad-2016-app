@@ -100,7 +100,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/shop', function (req, res) {
+app.get('/:shop', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'shop.html'));
 });
 app.get('/ui/style_shop.css', function (req, res) {
