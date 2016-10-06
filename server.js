@@ -169,6 +169,10 @@ app.get('/article-three',function(req,res){
 app.get('/ui/shop.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'shop.html'));
 });
+app.get('/ui/style_shop.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style_shop.css'));
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
