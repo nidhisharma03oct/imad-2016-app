@@ -1,0 +1,64 @@
+
+  <html>
+<head>
+<title>Search Engine Title Goes Here</title>
+<link rel="stylesheet" type="text/css" href="style_shop.css">
+</head>
+<body>
+<div id="container"> 
+<div id="header"> 
+<img id="imad" src="http://logos.textgiraffe.com/logos/logo-name/Imad-designstyle-kiddo-m.png"/>
+<span>
+ <img id="girl" src="https://pbs.twimg.com/profile_images/627816752580325376/sPuHEPVA.png"/>
+ </span>
+<ul>
+  <li><a href="#article-three">Article-Three</a></li>
+   <li><a href="#article-Two">Article-Two</a></li>
+    <li><a href="#article-one">Article-One</a></li>
+	<li><a href="#Home">Home</a></li>
+</ul>
+</div>
+<div id="sidebar">
+ <ul>
+  <li><a href="#article-three">Fashion</a></li>
+   <li><a href="#article-Two">Electronics</a></li>
+    <li><a href="#article-one">Accessories</a></li>
+	<li><a href="#Home">Grocerry</a></li>
+	<li><a href="#article-three">Watches</a></li>
+   <li><a href="#article-Two">Jwellery</a></li>
+    <li><a href="#article-one">Men's Jwellery</a></li>
+	<li><a href="#Home">Kids wear</a></li>
+</ul>
+</div>
+<div id="content"> 
+<p>Explore the wide collection of ethnic, formal, casual and western wear clothing for women and shop for the styles that best suit you. 
+Dress to impress, shop for clothing and accessories from leading brands online. 
+Find top offers on women's clothing, men's clothing</p>
+ <!-- <img id="girl" src="http://cliparts.co/cliparts/6ip/5BM/6ip5BMxXT.jpg" class="img-medium"/> -->
+<div class="floating-box"><img id="watch" src="http://ecx.images-amazon.com/images/I/71vjfwCHLDL._UL1500_.jpg" 
+alt="watch" class="img-medium"/></div>
+<div class="floating-box"><img id="watch" src="http://static1.jassets.com/p/Baggit-Lmp-Chime-Whistle-Beige-Sling-Bag-0173-4635202-1-catalog_m.jpg" 
+alt="watch" class="img-medium"/></div>
+<div class="floating-box"><img id="watch" src="http://ikuzowallets.com/wp-content/uploads/2014/10/Large-Wallets-For-Men.jpg" 
+alt="watch" class="img-medium"/></div>
+<div class="floating-box"><img id="watch" src="http://eastbengaljewelleryhouse.com/images/ring.png" 
+alt="watch" class="img-medium"/></div>
+<div class="floating-box"><img id="watch" src="http://www.pngadgilandsons.com/wp-content/uploads/Bangle-161.jpg" 
+alt="watch" class="img-medium"/></div>
+<div class="floating-box"><img id="watch" src="http://pngimagesfree.com/Jewellery_Png/Wedding/Thumb/antique_gold_neclace_png.png" 
+alt="watch" class="img-medium"/></div>
+<div class="floating-box"><img id="watch" src="http://assets.eatingwell.com/sites/default/files/shoppig%20bag.jpg" 
+alt="watch" class="img-medium"/></div>
+<div class="floating-box"><img id="watch" src="http://rationbus.com/wp-content/uploads/2015/07/Groceryandstaples.jpg" 
+alt="watch" class="img-medium"/></div>
+</div>
+<div id="footer"> Footer Goes Here </div>
+</div>
+
+        <script type="text/javascript" src="main.js">
+        </script>
+</body>
+</html>
+
+              
+  
