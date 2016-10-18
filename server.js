@@ -100,6 +100,15 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+  var comments=[];
+app.get('/submit-comment',function(req,res){  // / submit-comment?comment=xxxx
+   //get the comments from the request
+    var comment= req.query.comment;
+    comments.push(comment);
+    //using JSON we convert our array into string so the response can be sent as string or can say bytes
+    res.send(JSON.stringify(comments));
+});
+
 app.get('/:articleName',function(req,res){
     //articleName== article-one
     //articles[articleName]=={} content object for article one
@@ -129,15 +138,7 @@ var names=[];
    res.send(JSON.stringify(names));
  });
  */
-     var comments=[];
-app.get('/submit-comment',function(req,res){  // / submit-comment?comment=xxxx
-   //get the comments from the request
-    var comment= req.query.comment;
-    comments.push(comment);
-    //using JSON we convert our array into string so the response can be sent as string or can say bytes
-    res.send(JSON.stringify(comments));
-});
-
+   
 
 var counter=0;
 app.get('/counter',function(req,res){
