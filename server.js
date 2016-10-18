@@ -99,6 +99,14 @@ return htmlTemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+
+app.get('/:articleName',function(req,res){
+    //articleName== article-one
+    //articles[articleName]=={} content object for article one
+
+    articleName= req.params.articleName;
+    res.send(createTemplate(articles[articleName]));
+    
 /*
 app.get('/:shop', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'shop.html'));
@@ -130,13 +138,6 @@ app.get('/submit-comment',function(req,res){  // / submit-comment?comment=xxxx
     res.send(JSON.stringify(comments));
 });
 
-app.get('/:articleName',function(req,res){
-    //articleName== article-one
-    //articles[articleName]=={} content object for article one
-
-    articleName= req.params.articleName;
-    res.send(createTemplate(articles[articleName]));
-    
 
 var counter=0;
 app.get('/counter',function(req,res){
