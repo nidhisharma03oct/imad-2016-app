@@ -99,10 +99,11 @@ return htmlTemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
+/*
 app.get('/:shop', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'shop.html'));
 });
+*/
 app.get('/ui/style_shop.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style_shop.css'));
 });
